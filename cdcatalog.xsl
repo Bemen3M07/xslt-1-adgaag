@@ -8,7 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
   <h2>My CD Collection</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
+    <tr bgcolor="#ff0000">
       <th>Title</th>
       <th>Artist</th>
     </tr>
