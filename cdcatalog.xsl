@@ -10,12 +10,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th>Title</th>
       <th>Artist</th>
       <th>Country</th>
+      <th>Price</th>
     </tr>
-    <xsl:for-each select="catalog/cd[country='USA']">
+    <!-- <xsl:for-each select="catalog/cd[country='USA']"> -->
+    <xsl:for-each select="catalog/cd[ price &lt; 10 ]">
+    <xsl:sort select='price'/>
     <tr>
       <td><xsl:value-of select="title"/></td>
       <td><xsl:value-of select="artist"/></td>
       <td><xsl:value-of select="country"/></td>
+      <td><xsl:value-of select="price"/></td>
     </tr>
     </xsl:for-each>
   </table>
