@@ -10,7 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th>Title</th>
       <th>Artist</th>
       <th>Country</th>
-      <th>Price</th>
+      <th>Price</th> 
       <th>Color</th>
     </tr>
     <!-- <xsl:for-each select="catalog/cd[country='USA']"> -->
