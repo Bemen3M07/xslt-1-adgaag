@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th>Artist</th>
       <th>Country</th>
     </tr>
-    <xsl:for-each select="catalog/cd">
+    <xsl:for-each select="catalog/cd[country='USA']">
     <tr>
       <td><xsl:value-of select="title"/></td>
       <td><xsl:value-of select="artist"/></td>
